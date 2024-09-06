@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div id="title">
+        <h1>Simple Calculator</h1>
+    </div>
+    <div id="left"></div>
+    <div id="calculator">
+        <div id="icon">
+            <img src="icon.png" alt="kalk" id="icon"/>
+        </div>
+        <div id="pole">0</div>
+        <div id="buttons">
+            <div id="numbers">
+                <button class="number" onclick="clickNine()">9</button>
+                <button class="number" onclick="clickEight()">8</button>
+                <button class="number" onclick="clickSeven()">7</button>
+                <button class="number" onclick="clickSix()">6</button>
+                <button class="number" onclick="clickFive()">5</button>
+                <button class="number" onclick="clickFour()">4</button>
+                <button class="number" onclick="clickThree()">3</button>
+                <button class="number" onclick="clickTwo()">2</button>
+                <button class="number" onclick="clickOne()">1</button>
+                <button class="number" id="numberzero" onclick="clickZero()">0</button>
+            </div>
+            <div id="operations">
+                <button class="doubleWidthButton" id="ButtonC" onclick="clickC()">C</button>
+                <button class="otherButtons" onclick="subtraction()">-</button>
+                <button class="doubleWidthButton" onclick="addition()">+</button>
+                <button class="otherButtons" onclick="multiplication()">×</button>
+                <button class="otherButtons" onclick="division()">÷</button>
+                <button class="otherButtons" onclick="square()"><span>a<sup>b</sup></span></button>
+                <button class="otherButtons" onclick="root()"><span>√a</span></button>
+                <button class="doubleWidthButton" onclick="result()">=</button>
+                <button class="otherButtons" onclick="clickComa()">,</button>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <h1>Equation performed:</h1>
+        <p id="p1"></p>
+    </div>
+    <div id="footer">
+        AF
+    </div>
+</body>
+</html>
